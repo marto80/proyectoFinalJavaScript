@@ -1,0 +1,78 @@
+// Break tablet
+
+@media (min-width:768px){
+	.table__container{
+	font-size: $textMd;
+}
+	.box__horarios2{
+	width: 100%;
+	height: 80px;
+	border-radius: 4%;
+	font-size: $textSm;
+	padding: 3%;
+	}
+
+	.box__horarios{
+	width: 100%;
+	height: 50px;
+	border-radius: 4%;
+	font-size: $textSm;
+	padding: 3%;
+	}
+
+	#tit__carousel{
+	font-size: $textXxl;
+	font-weight: bolder;
+	}
+	.carousel-item {
+		p {
+			font-size: $textXl;
+			}
+	}
+	.container2{
+		width: 500px;
+	}
+
+	}
+
+
+// Break desktop
+
+@media (min-width:1024px){
+	.table__container{
+		font-size: $textLg;
+	}
+	#tit__carousel{
+		font-size: $textXxxl;
+		font-weight: bolder;
+	}
+	.carousel-item{
+		p {
+			font-size: $textXl;
+		}
+	} 
+	.container2{
+		width: 500px;
+	}
+
+}
+
+@media (max-width:440px){
+.logo__peque{
+	width: 50%;
+	}
+
+#tit__carousel{
+	font-size: $textMd;
+	font-weight: bolder;
+	}
+
+.carousel-item{
+	p {
+		font-size: $textSm;
+		}
+	} 
+	.container2{
+		width: 100%;
+	}	
+}

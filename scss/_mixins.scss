@@ -1,0 +1,48 @@
+@mixin horarios ($fondo, $alto, $peso, $pad) {
+    background-color: $fondo;
+	width: 100%;
+	height: $alto;
+    font-weight: $peso;
+	border-radius: 1%;
+	font-size: $textMd;
+	padding: $pad;
+}
+
+.box__horarios{
+    @include horarios($grey, 40px, normal, 3%)
+}
+
+.nada {
+    @include horarios($grey, 0px, bold, 0%)
+}
+
+.meditacion__destacado{
+    @include horarios($beidgeClaro, 40px, bold, 3%)
+}
+
+.entrenamiento__destacado{
+    @include horarios(rgb(196, 223, 170), 40px, normal, 3%)
+}
+
+.meditacion__destacado2{
+    @include horarios($beidgeClaro, 40px, bold, 3%);
+    color: $black2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p{
+        text-decoration: none;
+    }
+}
+
+.entrenamiento__destacado2{
+    @include horarios($lilaLight, 40px, normal, 3%);
+    color: $black2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.clases_especiales{
+    @include horarios($lilaLightDos, 40px, bold, 3%)
+}
